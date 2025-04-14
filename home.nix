@@ -22,12 +22,15 @@
   # environment.
   home.packages =with pkgs; [
     neofetch
-    google-chrome
+    firefox
+    elixir
     lazygit
-    # alacritty
+    alacritty
     mesa
     mesa-demos
-   # # Adds the 'hello' command to your environment. It prints a friendly
+    notion-app-enhanced
+    flameshot
+    # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
 

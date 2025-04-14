@@ -44,6 +44,7 @@
     #wtype
     #yt-dlp
     zip
+    xclip
 
     # Coding stuff
     openjdk23
