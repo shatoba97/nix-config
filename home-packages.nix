@@ -13,7 +13,7 @@
     #obsidian
     #pavucontrol
     #teams-for-linux
-    telegram-desktop
+    #telegram-desktop
     #vesktop
 
     # CLI utils

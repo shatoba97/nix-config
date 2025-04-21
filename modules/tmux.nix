@@ -17,8 +17,8 @@ set -g prefix C-a
 bind s choose-tree -sZ -O name
 
 # Изменение индексов
-set -g base-index 2
-setw -g pane-base-index 2
+set -g base-index 1
+setw -g pane-base-index 1
 
 # Переназначение клавиш
 unbind %
@@ -70,6 +70,9 @@ unbind -T copy-mode-vi MouseDragEnd2Pane
        set -g @continuum-restore 'on'
        set -g @continuum-save-interval '60' # minutes
          '';
+       }
+       {
+         plugin = tmuxPlugins.tmux-powerline;
        }
     ];
   };
