@@ -30,6 +30,7 @@
     mesa-demos
     notion-app-enhanced
     flameshot
+    smartgithg
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
