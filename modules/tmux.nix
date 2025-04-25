@@ -17,8 +17,8 @@ set -g prefix C-a
 bind s choose-tree -sZ -O name
 
 # Изменение индексов
-set -g base-index 1
-setw -g pane-base-index 1
+set -g base-index 0
+setw -g pane-base-index 0
 
 # Переназначение клавиш
 unbind %
@@ -27,8 +27,15 @@ bind | split-window -h
 unbind '"'
 bind - split-window -v
 
+# Kill pane without confirmation prompt
+unbind x
+bind-key x kill-pane
+
+# Do not exit tmux when closing a session
+set -g detach-on-destroy off
+
 unbind r
-bind r source-file ~/.tmux.conf
+bind r source-file ~/.config/.tmux.conf
 
 bind -r j resize-pane -D 6
 bind -r k resize-pane -U 6
@@ -68,12 +75,12 @@ unbind -T copy-mode-vi MouseDragEnd2Pane
          plugin = tmuxPlugins.continuum;
          extraConfig = ''
        set -g @continuum-restore 'on'
-       set -g @continuum-save-interval '60' # minutes
+       set -g @continuum-save-interval '5' # minutes
          '';
        }
-       {
-         plugin = tmuxPlugins.tmux-powerline;
-       }
+       # {
+       #   plugin = tmuxPlugins.tmux-powerline;
+       # }
     ];
   };
 }
