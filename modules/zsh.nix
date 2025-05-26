@@ -12,12 +12,12 @@
 
     shellAliases =
       let
-        flakeDir = "~/nix-home";
+        flakeDir = "~/nix-config/";
       in {
         hm = "home-manager";
         sw = "hm os switch";
         upd = "hm os switch --update";
-        hms = "hm switch --flake ${flakeDir}#alex";
+        hms = "hm --extra-experimental-features 'nix-command flakes' switch --flake ${flakeDir}#alex";
 
         pkgs = "nvim ${flakeDir}/";
 

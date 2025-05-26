@@ -22,6 +22,7 @@
   # environment.
   home.packages =with pkgs; [
     neofetch
+    oh-my-zsh
     firefox
     elixir
     lazygit

@@ -13,13 +13,15 @@
     #obsidian
     #pavucontrol
     #teams-for-linux
-    #telegram-desktop
+    telegram-desktop
     #vesktop
+    flameshot
+    polybar
 
     # CLI utils
     #bc
     #bottom
-    #brightnessctl
+    brightnessctl
     #cliphist
     #ffmpeg
     #ffmpegthumbnailer
@@ -45,6 +47,7 @@
     #yt-dlp
     zip
     xclip
+    ranger
 
     # Coding stuff
     openjdk23
