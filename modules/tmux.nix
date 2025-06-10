@@ -36,6 +36,11 @@ set -g detach-on-destroy off
 
 unbind r
 bind r source-file ~/.config/.tmux.conf
+# Передвунить окно, сделать его следующим\предыдущим  списке
+bind-key > swap-window -t +1; select-window -t +1
+
+bind-key < swap-window -t -1; select-window -t -1
+
 
 bind -r j resize-pane -D 6
 bind -r k resize-pane -U 6
